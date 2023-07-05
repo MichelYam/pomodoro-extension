@@ -1,0 +1,16 @@
+{
+  "name": "React Pomodoro Chrome Extension",
+  "description": "This is a Chrome extension built with React and TypeScript",
+  "version": "1.0.0",
+  "permissions": "storage",
+  "background": {
+    "service_worker": "background.js",
+    "type": "module",
+    "persistent": false
+  },
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "React Chrome Extension"
+  }
+}

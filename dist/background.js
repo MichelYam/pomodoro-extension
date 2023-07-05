@@ -1,0 +1,1 @@
+!function(){"use strict";chrome.runtime.onInstalled.addListener((function(){chrome.storage.local.set({temps:Date.now()})})),chrome.runtime.onStartup.addListener((function(){chrome.storage.local.get("temps",(function(e){e.temps&&console.log("Temps enregistré: "+e.temps)}))}))}();
